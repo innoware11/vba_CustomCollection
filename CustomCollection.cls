@@ -17,6 +17,15 @@ Attribute VB_Exposed = False
 ' github: innoware11
 
 ' Class representing a custom collection
+' Created on 25/04/2024
+' Updated on 25/04/2024
+'----------------------------
+'
+' Author: Maksym Shevchenko
+' email: innoware11@gmail.com
+' github: innoware11
+
+' Class representing a custom collection
 Private internalCollection As New Collection
 Private keysCollection As New Collection
 
@@ -42,7 +51,7 @@ End Function
 
 ' Method for deleting an element by key
 Public Sub Remove(key As String)
-    ' Поиск индекса элемента по ключу
+    ' Finding an element's index by key
     Dim index As Integer
     index = GetKeyIndex(key)
     
@@ -62,6 +71,11 @@ End Function
 ' Method to get all keys of a collection
 Public Function Keys() As Collection
     Set Keys = keysCollection
+End Function
+
+' Method to get all values of a collection
+Public Function Items() As Collection
+    Set Items = internalCollection
 End Function
 
 ' Function to get the index of a key in keysCollection
