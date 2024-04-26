@@ -6,5 +6,8 @@ Class adds methods:
   - Remove(key As String) - Method for deleting an element by key
   - Exists(key As String) As Boolean - Method for checking the presence of an element by key
   - Keys() As Collection - Method to get all keys of a collection
-    
+
+Usage - add to Class Modules CustomCollection.
+Dim collection as new CustomCollection
+use class methods    
   
